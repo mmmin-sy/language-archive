@@ -8,7 +8,7 @@
 * Emotion
 * [![Zod][Zod-shield]][Zod-url]
 * [![React-Hook-Form][React-hook-form-shield]][React-hook-form-url]
-
+* [![Prettier][Prettier-shield]][Prettier-url]
 
 ## Start & watch
 
@@ -37,3 +37,5 @@ A common way to update is by doing
 [Zod-url]: https://zod.dev/
 [React-hook-form-shield]: https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white
 [React-hook-form-url]: https://react-hook-form.com/
+[Prettier-shield]: https://img.shields.io/badge/prettier-%23F7B93E.svg?style=for-the-badge&logo=prettier&logoColor=black
+[Prettier-url]: https://prettier.io/

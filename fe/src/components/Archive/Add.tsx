@@ -37,7 +37,7 @@ const Add = ({ refetch }: Props) => {
 		register,
 		handleSubmit,
 		reset,
-		watch,
+		// watch,
 		formState: { errors },
 		setValue
 	} = useForm({ resolver: zodResolver(schema)}) // Zod schema is sent by zodResolver
