@@ -5,6 +5,8 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    "string": true,
+    "target": "ES2021",
 //    "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react"
 //    "baseUrl": ".",

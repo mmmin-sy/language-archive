@@ -38,7 +38,6 @@ app.get('/data', async (req, res) => {
 
 	try{
 		const result = search ? await client.query(query, [`%${search}%`]) :  await client.query(query);
-		console.log('#######', search, query, result)
 		res.status(200).json(result.rows);
 	} catch(err){
 		console.error('Error executing query', err.stack);

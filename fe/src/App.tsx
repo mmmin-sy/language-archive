@@ -1,5 +1,5 @@
 import Home from './pages/Home';
-import Find from './pages/Find';
+import Archive from './pages/Archive.tsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 import { Global } from '@emotion/react'
@@ -11,11 +11,12 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <Global styles={globalStyles}/>
+      <title>Language Archive</title>
       <Layout>
         <Router>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/find" element={<Find />} />
+            <Route path="/" element={<Home/>}/>
+            <Route path="/archive" element={<Archive/>}/>
           </Routes>
         </Router>
       </Layout>

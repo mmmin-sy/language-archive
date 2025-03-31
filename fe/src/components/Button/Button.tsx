@@ -2,11 +2,12 @@ import { ButtonStyle } from './Button.styles.ts';
 
 interface Props {
 	text: string;
-	onClick: () => void;
+	onClick?: () => void
+	type?: string;
 }
-const Button = ({ text, onClick }: Props) => {
+const Button = ({ text, onClick, type }: Props) => {
 	return (
-		<ButtonStyle onClick={onClick}>{text}</ButtonStyle>
+		<ButtonStyle onClick={onClick} type={type}>{text}</ButtonStyle>
 	)
 }
 

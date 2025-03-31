@@ -11,6 +11,7 @@ export const globalStyles = css`
 			font-family: Arial, sans-serif;
 			background-color: #f4f4f4;
 			color: #333;
+			font-size: 14px;
 	}
 
 	h1 {

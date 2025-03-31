@@ -11,7 +11,6 @@ export const fetchData = async (search: string): Promise<Data[]> => {
 	return response.json();
 };
 export const useDataQuery = (search: string): UseQueryResult<Data[], Error> => {
-	console.log('***search', search,'....')
 	return useQuery(
 		{
 			queryKey: ['posts', search],

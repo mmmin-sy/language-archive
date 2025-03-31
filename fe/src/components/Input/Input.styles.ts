@@ -8,4 +8,5 @@ export const InputContainer = styled.div`
 export const InputStyle = styled.input`
 	padding: 0.5rem;
   width: 100%;
+	margin-bottom: 0.5rem;	
 `

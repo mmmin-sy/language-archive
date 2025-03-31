@@ -6,6 +6,8 @@
 * [![Vite][Vite-shield]][Vite-url]
 * [![Typescript][Typescript-shield]][Typescript-url]
 * Emotion
+* [![Zod][Zod-shield]][Zod-url]
+* [![React-Hook-Form][React-hook-form-shield]][React-hook-form-url]
 
 
 ## Start & watch
@@ -31,3 +33,7 @@ A common way to update is by doing
 [React-url]: https://reactjs.org/
 [Typescript-shield]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
 [Typescript-url]: https://www.typescriptlang.org/
+[Zod-shield]: https://img.shields.io/badge/zod-%233068b7.svg?style=for-the-badge&logo=zod&logoColor=white
+[Zod-url]: https://zod.dev/
+[React-hook-form-shield]: https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white
+[React-hook-form-url]: https://react-hook-form.com/

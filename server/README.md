@@ -32,7 +32,7 @@ CREATE TABLE archive (
 
 ## Start & watch
 
-`npm run dev`
+`node server.js`
 
 Server connect with `http://localhost:3000`
 

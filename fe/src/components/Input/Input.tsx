@@ -6,9 +6,10 @@ interface Props {
 	onChange?: (value: string) => void;
 	onReset?: boolean;
 	placeholder?: string;
+	ref?: React.Ref<HTMLInputElement>;
 }
 
-const Input: React.FC<Props> = ({ onInput, onChange, onReset, placeholder }) => {
+const Input: React.FC<Props> = ({ onInput, onChange, onReset, placeholder, ref, ...props }) => {
 	const [value, setValue] = useState<string>('');
 
 	useEffect(() => {
@@ -24,10 +25,12 @@ const Input: React.FC<Props> = ({ onInput, onChange, onReset, placeholder }) => 
 	return (
 		<InputContainer>
 			<InputStyle
+				// ref={ref}
 				onInput={(e: React.FormEvent<HTMLInputElement>) => updateValue(e.currentTarget.value)}
-				onChange={() => onChange ? onChange(value) : null}
+				// onChange={() => onChange ? onChange(value) : null}
 				value={value}
 				placeholder={placeholder}
+				{...props}
 			/>
 		</InputContainer>
 	)

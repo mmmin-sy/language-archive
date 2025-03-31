@@ -1,14 +1,14 @@
-/** @jsxImportSource @emotion/react */
 import {useState} from "react";
 import Input from "../components/Input/Input.tsx";
 import Button from "../components/Button/Button.tsx";
 import {Data} from "../types/data.ts";
 import {useDataQuery} from "../hooks/queries.ts";
-import List from "../components/List/List.tsx";
-import AddData from "../components/AddData/AddData.tsx";
+import List from "../components/Archive/List.tsx";
+import Add from "../components/Archive/Add.tsx";
 import {ContentStyle} from "../components/Layout/Layout.styles.ts";
+import {SearchStyle} from "../components/Archive/Archive.styles.ts";
 
-const Find = () => {
+const Archive = () => {
 	const [searchInput, setSearchInput] = useState<string>('');
 	const [search, setSearch] = useState<string>('');
 
@@ -29,22 +29,21 @@ const Find = () => {
 
 	return (
 		<ContentStyle>
-			<AddData />
-			Find
-			<div>
+			<Add refetch={refetch} />
+
+			<SearchStyle>
 				<Input
 					onInput={(value: string) => setSearchInput(value)}
 				/>
-				<Button onClick={() => onFind()} text={'Find'}/>
-			</div>
+				<Button onClick={() => onFind()} text={'Search'}/>
+			</SearchStyle>
 
-			{data && (
+			{data ? (
 				<List data={data} />
-			)}
+			) : <div>No Data</div>}
 
-			{/*{data && data.map((item, id) => <div key={id}>{item.category},{item.example}, {item.translate}</div>)}*/}
 		</ContentStyle>
 	)
 }
 
-export default Find;
+export default Archive;
