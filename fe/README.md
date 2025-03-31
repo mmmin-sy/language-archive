@@ -1,4 +1,4 @@
-# Language Archive
+# Language Archive - Frontend 
 
 ## Built With
 
@@ -11,6 +11,8 @@
 ## Start & watch
 
 `npm run dev`
+
+open `http://localhost:5003`
 
 ## Update sources
 
