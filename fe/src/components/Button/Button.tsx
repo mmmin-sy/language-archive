@@ -3,7 +3,7 @@ import { ButtonStyle } from './Button.styles.ts';
 interface Props {
 	text: string;
 	onClick?: () => void
-	type?: string;
+	type?: "button" | "submit" | "reset";
 }
 const Button = ({ text, onClick, type }: Props) => {
 	return (

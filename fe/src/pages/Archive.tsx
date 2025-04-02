@@ -12,7 +12,7 @@ const Archive = () => {
 	const [searchInput, setSearchInput] = useState<string>('');
 	const [search, setSearch] = useState<string>('');
 
-	const { data, error, isLoading, refetch } = useDataQuery<Data[]>(search);
+	const { data, error, isLoading, refetch } = useDataQuery(search);
 
 	const onFind = () => {
 		setSearch(searchInput);

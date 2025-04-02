@@ -26,10 +26,10 @@ const Add = ({ refetch }: Props) => {
 		onSuccess: () => {
 			reset();
 			refetch();
-			alert('데이터가 성공적으로 추가되었습니다.');
+			alert('Success');
 		},
 		onError: (error) => {
-			alert(`데이터 추가 실패: ${error}`);
+			alert(`Fail: ${error}`);
 		}
 	})
 

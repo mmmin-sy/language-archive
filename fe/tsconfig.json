@@ -5,13 +5,19 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "string": true,
-    "target": "ES2021",
-//    "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react"
+    "target": "ES6",              // 타겟 ECMAScript 버전
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "esModuleInterop": true,
 //    "baseUrl": ".",
 //    "paths": {
 //      "src/*": ["./src/*"],
 //    }
+    "module": "CommonJS",         // 모듈 시스템
+    "lib": ["DOM", "ESNext"],     // 추가적인 라이브러리
+    "skipLibCheck": true,         // 라이브러리 체크 건너뛰기
+    "moduleResolution": "node",   // 모듈 해석 방법
+    "allowJs": true,              // JS 파일 처리
+    "allowImportingTsExtensions": true // .tsx 파일 확장자를 import 할수있도록
   }
 }

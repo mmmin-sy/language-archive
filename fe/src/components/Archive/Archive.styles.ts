@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 interface ListCellProps {
-	isBold: boolean;
+	isBold?: boolean;
 }
 
 export const AddStyle = styled.div`
